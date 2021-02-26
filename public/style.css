@@ -77,16 +77,16 @@ header .navbar-toggler span {
 
 /* --------> main */
 
-main .top-image {
+#top .top-image {
   position: relative;
   z-index: -1;
 }
 
-main .top-image img {
+#top .top-image img {
   width: 100%;
 }
 
-main .top-image span {
+#top .top-image span {
   position: absolute;
   color: #fff;
   font-size: 36px;
@@ -99,7 +99,7 @@ main .top-image span {
   left: calc(50% - 50px);
 }
 
-main .top-textarea {
+#top .top-textarea {
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -107,18 +107,21 @@ main .top-textarea {
   margin-bottom: 30px;
 }
 
-main .top-textarea h2 {
+#top .top-textarea h2 {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  font-size: 36px;  
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin:0 auto 10px;
   line-height: 1.5;
+  width: 90%;
 }
 
-main .top-textarea p {
+#top .top-textarea p {
   font-size: 14px;
   line-height: 2.6;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /* <-------- main */
@@ -196,7 +199,29 @@ main .top-textarea p {
     margin-left: 30px;
   }
 
-  main .top-image span {
+  #top .top-image img {
+    height: 360px;
+  }
+
+  #top .top-image span {
     font-size: 20px;
+    left: calc(50% - 30px);
+  }
+  
+  #top .top-textarea {
+    padding: 32px 0 33px;
+    margin-bottom: 40px;
+  }
+
+  #top .top-textarea h2 {
+    font-size: 20px;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  #top .top-textarea p {
+    line-height: 2;
+    padding: 0 20px;
+    width: 100%;
   }
 }
