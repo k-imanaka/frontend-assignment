@@ -16,6 +16,8 @@ button:focus {
 header {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
+  top:0;
+  right:0;
   width: 100%;
 }
 
@@ -77,17 +79,20 @@ header .navbar-toggler span {
 
 /* --------> main */
 
+#top {
+  background-color: #000;
+}
+
 #top .top-image {
-  position: relative;
-  z-index: -1;
+  background-image: url(./img/top-1.JPG);
+  background-size: cover;
+  height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#top .top-image img {
-  width: 100%;
-}
-
-#top .top-image span {
-  position: absolute;
+#top .top-image h2 {
   color: #fff;
   font-size: 36px;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
@@ -95,16 +100,14 @@ header .navbar-toggler span {
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-weight: 700;
   writing-mode: vertical-rl;
-  top: 30%;
-  left: calc(50% - 50px);
 }
 
 #top .top-textarea {
-  background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 51px 0 79px;
-  margin-bottom: 30px;
+  padding: 50px 0 80px;
+  margin: 0 auto 30px;
+  width: 90%;
 }
 
 #top .top-textarea h2 {
@@ -112,16 +115,14 @@ header .navbar-toggler span {
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-size: 36px;
-  margin:0 auto 10px;
+  margin-bottom: 10px;
   line-height: 1.5;
-  width: 90%;
 }
 
 #top .top-textarea p {
   font-size: 14px;
   line-height: 2.6;
-  margin: 0 auto;
-  width: 90%;
+  margin-bottom: 0;
 }
 
 /* <-------- main */
@@ -133,6 +134,7 @@ header .navbar-toggler span {
 @media (max-width: 1199px) {
   header {
     background-color: #000;
+    position: relative;
   }
 
   header .navbar {
@@ -199,29 +201,27 @@ header .navbar-toggler span {
     margin-left: 30px;
   }
 
-  #top .top-image img {
+  #top .top-image {
     height: 360px;
   }
 
-  #top .top-image span {
+  #top .top-image h2 {
     font-size: 20px;
-    left: calc(50% - 30px);
   }
-  
+
   #top .top-textarea {
     padding: 32px 0 33px;
     margin-bottom: 40px;
+    width: 100%;
   }
 
   #top .top-textarea h2 {
     font-size: 20px;
     padding: 0 20px;
-    width: 100%;
   }
 
   #top .top-textarea p {
     line-height: 2;
     padding: 0 20px;
-    width: 100%;
   }
 }
