@@ -143,6 +143,10 @@ header .navbar-toggler span {
   color: #000;
 }
 
+#info .textarea h2 {
+  color: #442606;
+}
+
 /* <-------- main */
 
 /* --------> footer */
