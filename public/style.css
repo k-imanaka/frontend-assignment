@@ -28,6 +28,16 @@ button:focus {
   margin-bottom: 0;
 }
 
+.btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  line-height: 55px;
+  padding: 0 15px;
+  min-width: 200px;
+  font-size: 14px;
+}
+
 /* <-------- common */
 
 /* --------> header */
@@ -145,6 +155,41 @@ header .navbar-toggler span {
 
 #info .textarea h2 {
   color: #442606;
+}
+
+#cards .card {
+  background-color: #f5f5f5;
+}
+
+#cards .card-img-overlay {
+  padding: 0;
+}
+#cards .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 10;
+}
+
+#cards .triangle {
+  width: 160px;
+  height: 160px;
+}
+
+#cards .triangle::after {
+  content: "";
+  top: 0;
+  left: 0;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+#cards p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 2.4;
 }
 
 /* <-------- main */
