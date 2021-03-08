@@ -9,6 +9,25 @@ button:focus {
   outline: none;
 }
 
+.textarea {
+  text-align: center;
+}
+
+.textarea h2 {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.textarea p {
+  font-size: 14px;
+  line-height: 2.6;
+  margin-bottom: 0;
+}
+
 /* <-------- common */
 
 /* --------> header */
@@ -101,26 +120,31 @@ header .navbar-toggler span {
   writing-mode: vertical-rl;
 }
 
-#top .top-textarea {
-  color: #fff;
-  text-align: center;
+#top .textarea {
   padding: 50px 0 80px;
   margin-bottom: 30px;
+  color: #fff;
 }
 
-#top .top-textarea h2 {
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  font-size: 36px;
-  margin-bottom: 10px;
-  line-height: 1.5;
+#info .info-image {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 100px;
 }
 
-#top .top-textarea p {
-  font-size: 14px;
-  line-height: 2.6;
-  margin-bottom: 0;
+#info .info-image img {
+  width: 25%;
+}
+
+#info .textarea {
+  padding: 50px 20px 50px;
+  margin-bottom: 100px;
+  background: #f5f5f5;
+  color: #000;
+}
+
+#info .textarea h2 {
+  color: #442606;
 }
 
 /* <-------- main */
@@ -207,18 +231,44 @@ header .navbar-toggler span {
     font-size: 20px;
   }
 
-  #top .top-textarea {
+  #top .textarea {
     padding: 32px 0 33px;
     margin-bottom: 40px;
   }
 
-  #top .top-textarea h2 {
+  #top .textarea h2 {
     font-size: 20px;
     padding: 0 20px;
   }
 
-  #top .top-textarea p {
+  #top .textarea p {
     line-height: 2;
     padding: 0 20px;
+  }
+
+  #info {
+    padding: 0 20px;
+  }
+
+  #info .info-image {
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  #info .info-image img {
+    width: 50%;
+  }
+
+  #info .textarea {
+    padding: 35px 25px 35px;
+    margin-bottom: 40px;
+  }
+
+  #info .textarea h2 {
+    font-size: 20px;
+  }
+
+  #info .textarea p {
+    line-height: 2;
   }
 }
