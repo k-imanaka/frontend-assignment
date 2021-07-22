@@ -299,7 +299,7 @@ header .navbar-toggler span {
   transition-duration: 0.5s;
 }
 
-#event img:hover {
+#event a:hover .event-img-wrap img {
   transform: scale(1.2);
 }
 
@@ -318,8 +318,16 @@ header .navbar-toggler span {
   font-size: 14px;
 }
 
-#news-event .info-list::after {
+#news-event .info-list a::after {
   content: "＞";
+  margin-left: 12px;
+  font-weight: 700;
+}
+
+#news-event .info-list a:hover,a:hover::after {
+  color: #999;
+  transition: 0.2s;
+  transition-timing-function: ease;
 }
 
 /* <-------- main */
