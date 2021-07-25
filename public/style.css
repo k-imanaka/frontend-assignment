@@ -268,6 +268,10 @@ header .navbar-toggler span {
   margin-bottom: 30px;
 }
 
+#news-event .news-article a:hover {
+  color: #442602;
+}
+
 #news-event .event-article {
   margin-bottom: 30px;
 }
@@ -324,7 +328,8 @@ header .navbar-toggler span {
   font-weight: 700;
 }
 
-#news-event .info-list a:hover,a:hover::after {
+#news-event .info-list a:hover,
+a:hover::after {
   color: #999;
   transition: 0.2s;
   transition-timing-function: ease;
