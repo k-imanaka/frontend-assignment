@@ -336,6 +336,76 @@ a:hover::after {
   transition-timing-function: ease;
 }
 
+#plan .plan-textarea h2 {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #442506;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#plan .plan-textarea p {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 2.4;
+  text-align: center;
+}
+
+#plan ul li {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#plan ul li:nth-child(1) {
+  background: #a19283;
+  height: 55px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+#plan .plan-price-yen {
+  color: #442506;
+  margin-bottom: 16px;
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "メイリオ", Meiryo, sans-serif;
+  font-weight: 700;
+}
+
+#plan .plan-price-yen span:nth-child(1) {
+  font-size: 20px;
+}
+
+#plan .plan-price-yen span:nth-child(2) {
+  font-size: 40px;
+}
+
+#plan .plan-list-standard {
+  border: 5px solid #442607;
+}
+
+#plan .plan-list-standard li:nth-child(1) {
+  background: #442607;
+  margin: -1px -1px;
+}
+
+#plan ul li:nth-child(2) {
+  background: #ece9e6;
+  padding: 25px 0;
+  line-height: 1;
+}
+
+#plan .plan-btn {
+  margin-top: 40px;
+  text-align: center;
+}
+
 /* <-------- main */
 
 /* --------> footer */
@@ -499,5 +569,36 @@ a:hover::after {
 
   #event .event-article-text {
     padding: 10px 20px 15px;
+  }
+
+  #plan .plan-textarea h2 {
+    font-size: 20px;
+  }
+
+  #plan .plan-textarea p {
+    margin-bottom: 35px;
+    line-height: 2;
+  }
+
+  #plan ul {
+    margin-bottom: 25px;
+  }
+
+  #plan ul li {
+    padding: 12px 10px;
+  }
+
+  #plan ul li:nth-child(1) {
+    height: 45px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #plan ul li:nth-child(2) {
+    padding: 15px 0;
+  }
+
+  #plan .plan-btn {
+    margin-top: 0px;
   }
 }
