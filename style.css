@@ -375,14 +375,11 @@ a:hover::after {
   margin-bottom: 16px;
   font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
     "メイリオ", Meiryo, sans-serif;
+  font-size: 20px;
   font-weight: 700;
 }
 
-#plan .plan-price-yen span:nth-child(1) {
-  font-size: 20px;
-}
-
-#plan .plan-price-yen span:nth-child(2) {
+#plan .plan-price-yen span {
   font-size: 40px;
 }
 
@@ -599,6 +596,6 @@ a:hover::after {
   }
 
   #plan .plan-btn {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
