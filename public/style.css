@@ -17,6 +17,10 @@ ul {
   padding-left: 0;
 }
 
+li {
+  list-style: none;
+}
+
 .textarea {
   text-align: center;
 }
@@ -410,6 +414,7 @@ a:hover::after {
 #cafe {
   background: url(./img/cafe-1.JPG) top / cover no-repeat;
   height: 500px;
+  margin-bottom: 0;
 }
 
 #cafe .cafe-textarea {
@@ -419,8 +424,7 @@ a:hover::after {
   justify-content: center;
   height: 100%;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 #cafe .cafe-textarea h2 {
@@ -449,11 +453,9 @@ a:hover::after {
 
 #cafe .cafe-textarea ul li {
   margin: 0 15px;
-  list-style: none;
   position: relative;
   width: 400px;
   height: 120px;
-  position: relative;
 }
 
 #cafe .cafe-textarea ul li a {
@@ -493,8 +495,6 @@ a:hover::after {
 }
 
 #cafe img {
-  width: 100%;
-  height: 100%;
   display: block;
   transition-duration: 0.5s;
   overflow: hidden;
@@ -503,6 +503,81 @@ a:hover::after {
 /* <-------- main */
 
 /* --------> footer */
+
+footer .textarea {
+  padding: 60px 0;
+  text-align: center;
+}
+
+footer .footer-logo {
+  margin-bottom: 20px;
+}
+
+footer .footer-logo img {
+  width: 140px;
+}
+
+footer .textarea p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 2.2;
+}
+
+footer .footer-social-nav {
+  margin-bottom: 0;
+}
+
+footer .footer-social-nav li {
+  display: inline;
+  margin-right: 12px;
+}
+
+footer .footer-social-nav li a {
+  text-decoration: none;
+}
+
+footer .footer-social-nav li a svg {
+  width: 14px;
+}
+
+footer .footer-social-nav li a:hover svg {
+  fill: #999;
+  color: #fff;
+}
+
+footer .footer-menu {
+  display: flex;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0;
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+footer .footer-menu li + li::before {
+  margin: 0 10px;
+  content: "|";
+}
+
+footer .footer-menu-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .footer-menu-item a:hover {
+  color: #442602;
+}
+
+footer .footer-copyright {
+  background-color: #000;
+  height: 60px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 60px;
+  text-align: center;
+}
 
 /* <-------- footer */
 
@@ -585,6 +660,11 @@ a:hover::after {
 @media (max-width: 900px) {
   #cafe .cafe-textarea ul {
     display: block;
+    width: 100%;
+  }
+
+  #cafe .cafe-textarea ul li {
+    margin: 0 auto;
   }
 
   #cafe .cafe-textarea ul li:nth-child(1) {
@@ -727,5 +807,44 @@ a:hover::after {
 
   #cafe .cafe-textarea h2 {
     font-size: 20px;
+  }
+
+  footer .textarea {
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  footer .textarea p {
+    margin-bottom: 10px;
+  }
+
+  footer .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  footer .footer-logo img {
+    width: 110px;
+  }
+
+  footer .footer-menu {
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+
+  footer .footer-menu li {
+    width: 50%;
+    line-height: 2.4;
+    text-align: left;
+  }
+
+  footer .footer-menu li + li::before {
+    content: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #cafe .cafe-textarea ul li {
+    width: 100%;
   }
 }
